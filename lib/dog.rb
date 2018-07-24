@@ -82,7 +82,7 @@ class Dog
       ruby_dog_object = Dog.new(name: dog[1], breed: dog[2], id: dog[0])
     end
 
-    def update 
+    def update
       sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
       DB[:conn].execute(sql, self.name, self.breed, self.id)
     end 
