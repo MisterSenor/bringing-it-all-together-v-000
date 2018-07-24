@@ -79,7 +79,8 @@ class Dog
       SQL
 
       dog = DB[:conn].execute(sql, name)[0]
-      binding.pry
+      new_ruby_dog_by_name = Dog.create(name: dog[1], breed: dog[2])
+      
     end
 
 
