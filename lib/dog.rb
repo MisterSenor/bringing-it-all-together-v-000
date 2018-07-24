@@ -66,6 +66,7 @@ class Dog
         dog_data = dog[0]
         ruby_dog = Dog.create(name: dog_data[1], breed: dog_data[2])
         ruby_dog
+        binding.pry
       end
     end
 
