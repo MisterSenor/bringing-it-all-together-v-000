@@ -63,10 +63,8 @@ class Dog
         ruby_dog.id = dog_data[0]
         ruby_dog
       else
-        dog_data = dog[0]
-        binding.pry
-        ruby_dog = Dog.create(name: dog_data[1], breed: dog_data[2])
-        ruby_dog
+        new_dog = Dog.create(name: name, breed: breed)
+        new_dog
       end
     end
 
