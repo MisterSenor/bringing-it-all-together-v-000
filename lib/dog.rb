@@ -64,7 +64,6 @@ class Dog
         ruby_dog
       else
         new_dog = Dog.create(name: name, breed: breed)
-        new_dog
       end
     end
 
